@@ -1,0 +1,608 @@
+/* General Style */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Commissioner', sans-serif;
+    color: hsl(0, 0%, 48%);
+}
+
+body{
+    position: relative;
+    background-color: hsl(0, 0%, 95%);
+    transition: opacity 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: hsl(0, 0%, 0%);
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+button{
+    background-color: hsl(176, 50%, 47%);
+    font-family: 'Commissioner', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    padding: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+
+p{
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%)
+}
+
+section{
+    width: 90%;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    margin: 1.5rem 5%;
+}
+
+/*Mobile Layout */
+
+main.inactive{
+    pointer-events: none;
+}
+
+#container1{
+    width: 100%;
+    background-image: url(image-hero-mobile.jpg);
+    background-size: cover;
+    padding: 3rem 3% 21rem;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: none;
+}
+
+.container2{
+    position: relative;
+    margin-top: -5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 p{
+margin-top: 2em;
+}
+
+.container2 img{
+    margin-top: -5em;
+    position: absolute;
+}
+
+#firstButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 1.5em;
+}
+
+#backProjectButton{
+    flex-grow: 1;
+    margin-left: -11em;
+    width: 100%;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.funds{
+   width: 100%;
+   padding: 2em;
+}
+
+.funds h2{
+    font-size: 35px;
+}
+
+.funds:nth-of-type(2){
+    border-top: 1px solid hsl(0, 0%, 90%); 
+}
+
+.funds:nth-of-type(3){
+    border-top: 1px solid hsl(0, 0%, 90%); 
+}
+
+#progressBar{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1em;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 50px;
+    top: 1em;
+}
+
+#progressBar div{
+    position: absolute;
+    display: block;
+    height: 1em;
+    border-radius: 50px;
+    background-color:hsl(176, 50%, 47%);
+}
+
+.container4p{
+    margin-top: 1em;
+}
+
+.container4 button{
+    width: 10em;
+}
+
+.container4 .selection{
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 10px;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.title p{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+
+.text{
+    margin-top: 1.5em;
+}
+
+.stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.stock span{
+    margin-left: 1em;
+}
+
+.selectReward{
+    margin-top: 1em;
+}
+
+#mahogany{
+    filter: opacity(40%);
+}
+
+#outOfStock{
+    background-color: hsl(0, 0%, 48%);
+    cursor:unset;
+}
+
+/* Mobile Menu */
+
+#mobileNav{
+    position: absolute;
+    top: 7em;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:hsl(0, 0%, 100%);
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 5%;
+    box-shadow: 0 0 2em hsl(0, 0%, 48%);
+    z-index: 3;
+}
+
+#mobileNav p{
+    color:hsl(0, 0%, 0%);
+    font-family: 'Commissioner', sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    margin-left: 1em;
+    line-height: 3em;
+    
+}
+
+.navMobile{
+    width: 100%;
+}
+
+.navMobile:nth-of-type(2){
+    border-top: 1px solid hsl(0, 0%, 95%);
+    border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+#openMenu:hover{
+    cursor: pointer;
+}
+
+#openMenu{
+    z-index: 2;
+    pointer-events: all;
+}
+
+#closeMenu{
+    position: absolute;
+    top: 0.3em;
+    right: 0.1em;
+    display: none;
+    cursor: pointer;
+}
+
+/* Bookmark Button */
+
+#bookmarkButton{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 56px;
+    width: 56px;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#bookmarkButton p{
+    color: hsl(0, 0%, 65%);
+    width: 124px;
+    display: none;
+    margin-top: -4em;
+}
+
+#bookmarkButton p:hover{
+    color:hsl(176, 72%, 28%);
+}
+
+#bookmarkButton:hover{
+    cursor: pointer;
+}
+
+/* Overlay Page*/
+
+#modal{
+    position: fixed;
+    top: 10vh;
+    height: 80vh;
+    width: 80%;
+    left: 1.5em;
+    overflow: auto;
+    outline: none;
+    transform: scale(0.95);
+    display: none;
+    z-index: 1;
+}
+
+#modalTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#closeModal{
+    width: 20px;
+}
+
+#closeModal:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#noRewardButton{
+    margin-top: 1em;
+    width: 8em;
+    margin-left: 8em;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.mobileStock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+.desktopStock{
+    display: none;
+}
+
+.mobileStock span{
+    margin-left: 0.5em;
+}
+
+#modal p{
+    margin-top: 1em;
+}
+
+.options b{
+    color: hsl(0, 0%, 0%);
+}
+
+.box{
+    border: 1px solid hsl(0, 0%, 65%);
+    border-radius: 10px;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.productSelection{
+    margin-left: 1em;
+    line-height: 2em;
+    margin-top: -1em;
+    cursor: pointer;
+}
+
+.value b{
+    color: hsl(176, 50%, 47%);
+}
+
+input[type='radio']{
+    outline: none;
+}
+
+input[type='radio']::after{
+    content: '';
+    background-color: hsl(176, 50%, 47%);
+    transform: scale(0);
+    transition: transform 0.25s ease;
+}
+
+.box.active.input[type='radio']::after{
+    transform: scale(1);
+}
+
+.pledge p{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.offerContinue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+input[type='text']{
+    border-radius: 50px;
+    outline: none;
+    padding: 1em;
+    border: 1px solid hsl(0, 0%, 48%);
+    width: 8em;
+    font: 500 'Comissioner', sans-serif;
+}
+
+input[type='text']:focus{
+    border-color: hsl(176, 72%, 28%);
+}
+
+.offerContinue button{
+    width: 8em;
+}
+
+#overlayMahogany{
+    filter: opacity(40%);
+}
+
+#notAvailable{
+    display: none;
+}
+
+/* Confirmation Page */
+
+#confirmation{
+    position: fixed;
+    top: 21vh;
+    text-align: center;
+    width: 60%;
+    left: 5em;
+    padding: -2em;
+    pointer-events: none;
+    display: none;
+    z-index: 2;
+    height: auto;
+}
+
+#confirmation.active{
+    pointer-events: all;
+}
+
+#confirmation img{
+    margin-top: -2em;
+}
+
+#confirmation h3{
+    margin-top: 1em;
+}
+
+#confirmation p{
+    margin-top: 1em;
+}
+
+#confirmation button{
+    width: 7em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media (min-width: 768px){
+    section{
+        width: 700px;
+        margin: 1.5rem calc(50% - 350px);
+    }
+
+    .mobileMenu{
+        display: none;
+    }    
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: -1em;
+    }
+
+    .nav a{
+        color: hsl(0, 0%, 100%);
+        margin-right: 3em;
+    }
+
+    .nav a:hover{
+        text-decoration: underline;
+    }
+
+    #mobileNav{
+        display: none;
+    }
+
+    #container1{
+        background-image: url(image-hero-desktop.jpg);
+        background-position: center;
+    }
+
+    #bookmarkButton{
+        width: 180px;
+    }
+
+    #bookmarkButton p{
+        display: block;
+        margin-left: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    #overall{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .funds:nth-of-type(2){
+        border-top: none;
+        border-left: 1px solid hsl(0, 0%, 65%);
+    }
+
+    .funds:nth-of-type(3){
+        border-top: none;
+        border-left: 1px solid hsl(0, 0%, 65%);
+    }
+
+    .funds h2,
+    .funds p{
+        text-align: left;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .count{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .mobileStock{
+        display: none;
+    }
+
+    .productSelection{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .value{
+        margin-left: 1em;
+    }
+
+    .desktopStock{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        margin-top: -1.5em;
+        margin-right: 2em;
+    }
+
+    .desktopStock h3,
+    .desktopStock span{
+        font-size: 18px;
+    }
+
+    .desktopStock span{
+        margin-left: 0.5em;
+    }
+
+    .radioInputBox p{
+        clear: both;
+    }
+
+    #confirmation{
+        width: 40%;
+        margin: 1.5rem calc(56% - 350px);
+        margin-left: 20em;
+    }
+
+    #modal{
+        width: 54%;
+        left: -1em;
+    }
+
+    #noRewardButton{
+        margin-left: 25em;
+        margin-top: 2em;
+    }
+}
+
